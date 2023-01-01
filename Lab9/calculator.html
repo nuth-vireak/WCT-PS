@@ -9,39 +9,39 @@
 </head>
 
 <body class="container mt-5" style="max-width: 450px; max-height: 800px;">
-    <div class="container text-center border-5 border-dark bg-dark p-4">
+    <div class="container text-center bg-dark p-4">
         <h1 class="text-white">ZIN II CALCULATOR</h1>
         <div class="mb-3 mt-5">
             <fieldset disabled>
-                <input type="text" id="display" name="display"
+                <input type="number" id="display" name="display"
                     class="form-control pt-4 pb-4 text-end fs-6 fw-bold border-2 border-white" placeholder="0">
             </fieldset>
         </div>
 
         <div class="row p-2">
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="1">1</button>
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="2">2</button>
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="3">3</button>
+            <button onclick="numOne()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="1">1</button>
+            <button onclick="numTwo()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="2">2</button>
+            <button onclick="numThree()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="3">3</button>
             <button type="button" class="col btn btn-success pt-4 pb-4" id="plus">+</button>
         </div>
 
         <div class="row p-2">
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="4">4</button>
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="5">5</button>
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="6">6</button>
+            <button onclick="numFour()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="4">4</button>
+            <button onclick="numFive()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="5">5</button>
+            <button onclick="numSix()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="6">6</button>
             <button type="button" class="col btn btn-success pt-4 pb-4" id="sub">-</button>
         </div>
 
         <div class="row p-2">
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="7">7</button>
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="8">8</button>
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="9">9</button>
+            <button onclick="numSeven()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="7">7</button>
+            <button onclick="numEight()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="8">8</button>
+            <button onclick="numNine()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="9">9</button>
             <button type="button" class="col btn btn-success pt-4 pb-4" id="mul">*</button>
         </div>
 
         <div class="row p-2">
             <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="div">/</button>
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="0">0</button>
+            <button onclick="numZero()"type="button" class="col btn btn-success me-2 pt-4 pb-4" id="0">0</button>
             <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="dot">.</button>
             <button type="button" class="col btn btn-success pt-4 pb-4" id="equal">=</button>
         </div>
@@ -52,9 +52,6 @@
         </div>
     </div>
 
-    <script src="calculator.js">
-
-    </script>
+    <script src="calculator.js"></script>
 </body>
-
 </html>
