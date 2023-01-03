@@ -13,8 +13,8 @@
         <h1 class="text-white">ZIN II CALCULATOR</h1>
         <div class="mb-3 mt-5">
             <fieldset disabled>
-                <input type="number" id="display" name="display"
-                    class="form-control pt-4 pb-4 text-end fs-6 fw-bold border-2 border-white" placeholder="0">
+                <input type="text" id="display" name="display"
+                    class="form-control pt-4 pb-4 text-end fs-6 fw-bold border-2 border-white" value="0">
             </fieldset>
         </div>
 
@@ -22,33 +22,33 @@
             <button onclick="numOne()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="1">1</button>
             <button onclick="numTwo()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="2">2</button>
             <button onclick="numThree()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="3">3</button>
-            <button type="button" class="col btn btn-success pt-4 pb-4" id="plus">+</button>
+            <button onclick="plus()" type="button" class="col btn btn-success pt-4 pb-4" id="plus">+</button>
         </div>
 
         <div class="row p-2">
             <button onclick="numFour()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="4">4</button>
             <button onclick="numFive()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="5">5</button>
             <button onclick="numSix()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="6">6</button>
-            <button type="button" class="col btn btn-success pt-4 pb-4" id="sub">-</button>
+            <button onclick="sub()" type="button" class="col btn btn-success pt-4 pb-4" id="sub">-</button>
         </div>
 
         <div class="row p-2">
             <button onclick="numSeven()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="7">7</button>
             <button onclick="numEight()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="8">8</button>
             <button onclick="numNine()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="9">9</button>
-            <button type="button" class="col btn btn-success pt-4 pb-4" id="mul">*</button>
+            <button onclick="mul()" type="button" class="col btn btn-success pt-4 pb-4" id="mul">*</button>
         </div>
 
         <div class="row p-2">
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="div">/</button>
+            <button onclick="divide()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="div">/</button>
             <button onclick="numZero()"type="button" class="col btn btn-success me-2 pt-4 pb-4" id="0">0</button>
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4" id="dot">.</button>
-            <button type="button" class="col btn btn-success pt-4 pb-4" id="equal">=</button>
+            <button onclick="dotBtn()" type="button" class="col btn btn-success me-2 pt-4 pb-4" id="dot">.</button>
+            <button onclick="equal()" type="button" class="col btn btn-success pt-4 pb-4" id="equal">=</button>
         </div>
 
         <div class="row p-2">
-            <button type="button" class="col btn btn-success me-2 pt-4 pb-4 bg-danger" id="clear">Clear</button>
-            <button type="button" class="col btn btn-success pt-4 pb-4 bg-warning" id="del">Delete</button>
+            <button type="button" onclick="clearAll()" class="col btn btn-success me-2 pt-4 pb-4 bg-danger" id="clear">Clear all</button>
+            <button type="button" onclick="delBtn()" class="col btn btn-success pt-4 pb-4 bg-warning" id="del">Delete</button>
         </div>
     </div>
 
