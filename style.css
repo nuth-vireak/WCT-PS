@@ -10,6 +10,12 @@
 8. Footer
 ------------------ */
 
+.myFont{
+    @import url('https://fonts.cdnfonts.com/css/kadwa');
+    font-family: 'Kadwa', serif;
+    font-style: normal;
+    font-weight: 700;
+}
 
 /* 1. General */
 
